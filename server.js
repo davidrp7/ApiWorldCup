@@ -46,6 +46,32 @@ var calendar = [
                 hour: '13:00'
             }
         ]
+    },
+    {
+        day: 'Viernes 15 junio',
+        matchs: [
+            {
+                img_local: 'imagen',
+                local: 'Egipto',
+                img_visitor: 'imagen',
+                visitor: 'Uruguay',
+                hour: '07:00'
+            },
+            {
+                img_local: 'imagen',
+                local: 'Marruecos',
+                img_visitor: 'imagen',
+                visitor: 'RI de Irán',
+                hour: '10:00'
+            },
+            {
+                img_local: 'imagen',
+                local: 'Portugal',
+                img_visitor: 'imagen',
+                visitor: 'España',
+                hour: '13:00'
+            }
+        ]
     }
 ];
 
