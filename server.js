@@ -8,6 +8,7 @@ const PORT = process.env.PORT || 5000
 
 // ***************************************************************
 
+/*
 var calendar = [
     {
         day: 'Jueves 14 junio',
@@ -48,6 +49,64 @@ var calendar = [
         ]
     }
 ];
+*/
+
+var calendar = [
+    {
+        wType: '1',
+        day: 'Jueves 14 junio',
+        img_local: '',
+        local: '',
+        img_visitor: '',
+        visitor: '',
+        hour: ''
+    },
+    {
+        wType: '0',
+        day: '',
+        img_local: 'imagen',
+        local: 'Rusia',
+        img_visitor: 'imagen',
+        visitor: 'Arabia',
+        hour: '10:00'
+    },
+    {
+        wType: '1',
+        day: 'Viernes 15 junio',
+        img_local: '',
+        local: '',
+        img_visitor: '',
+        visitor: '',
+        hour: ''
+    },
+    {
+        wType: '0',
+        day: '',
+        img_local: 'imagen',
+        local: 'Egipto',
+        img_visitor: 'imagen',
+        visitor: 'Uruguay',
+        hour: '07:00'
+    },
+    {
+        wType: '0',
+        day: '',
+        img_local: 'imagen',
+        local: 'Marruecos',
+        img_visitor: 'imagen',
+        visitor: 'RI de Irán',
+        hour: '10:00'
+    },
+    {
+        wType: '0',
+        day: '',
+        img_local: 'imagen',
+        local: 'Portugal',
+        img_visitor: 'imagen',
+        visitor: 'España',
+        hour: '13:00'
+    }
+];
 
 // ***************************************************************
 
@@ -60,7 +119,7 @@ app.get('/', (req, res) => {
 // ***************************************************************
 
 // Listar todos los partidos
-app.get('/matchs', (req, res) => {
+app.get('/calendar', (req, res) => {
     res.send(calendar)
 })
 
