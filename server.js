@@ -322,8 +322,8 @@ app.post('/login', (req, res) => {
     let data = req.body;
     // let consecutive = users.length;
     // let itemUser = {id: consecutive, name: data.Name};
-    users.push(users)
-    res.send("Login user")
+    // users.push(users)
+    res.send(users)
 })
 
 /*
