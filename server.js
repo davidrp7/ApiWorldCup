@@ -320,10 +320,26 @@ app.get('/stadium', (req, res) => {
 // Validar user and pass 
 app.post('/login', (req, res) => {
     let data = req.body;
+    let searchUser = false;
+
+    // users.forEach(function(element) {
+    //     if( (element.user == data.user) && (element.password == data.pass) ){
+    //         searchUser = true;
+    //     }
+    // });
+
+    res.send([{
+        'success': searchUser
+    }])
+})
+
+// Metodo para crear una cuenta de usuario
+app.post('/signup', (req, res) => {
+    let data = req.body;
     let consecutive = users.length;
     let itemUser = {id: consecutive, user: data.user, password: data.pass, name: 'aaa', email: 'aaa'};
     users.push(itemUser)
-    res.send(users)
+    res.send("usuario creado correctamente")
 })
 
 /*
