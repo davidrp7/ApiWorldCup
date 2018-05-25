@@ -328,11 +328,22 @@ app.post('/login', (req, res) => {
     //     }
     // });
 
+    let login = [
+        {
+            searchUser: searchUser,
+            id: '0',
+            user: 'admin',
+            password: '123456',
+            name: 'admin',
+            email: 'admin@worldcup.com'
+        }
+    ];
+
     // res.send([{
     //     'success': searchUser
     // }])
     // res.send(`{'success': ${searchUser}}`)
-    res.send('hola desde nodejs')
+    res.send(login)
 })
 
 // Metodo para crear una cuenta de usuario
