@@ -320,9 +320,9 @@ app.get('/stadium', (req, res) => {
 // Validar user and pass 
 app.post('/login', (req, res) => {
     let data = req.body;
-    // let consecutive = users.length;
-    // let itemUser = {id: consecutive, name: data.Name};
-    // users.push(users)
+    let consecutive = users.length;
+    let itemUser = {id: consecutive, user: data.user, password: data.pass, name: 'aaa', email: 'aaa'};
+    users.push(itemUser)
     res.send(users)
 })
 
