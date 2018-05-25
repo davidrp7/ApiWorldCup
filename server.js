@@ -328,10 +328,11 @@ app.post('/login', (req, res) => {
     //     }
     // });
 
-    // res.send([{
-    //     'success': searchUser
-    // }])
-    res.send(`{'success': ${searchUser}}`)
+    res.send([{
+        'success': searchUser
+    }])
+    // res.send(`{'success': ${searchUser}}`)
+    // res.send(`{'success': ${searchUser}}`)
 })
 
 // Metodo para crear una cuenta de usuario
