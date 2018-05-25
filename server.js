@@ -7,6 +7,17 @@ const hostname = '127.0.0.1';
 const PORT = process.env.PORT || 5000
 
 // ***************************************************************
+// ***************************************************************
+
+var users = [
+    {
+        id: '0',
+        user: 'admin',
+        password: '123456',
+        name: 'admin',
+        email: 'admin@worldcup.com'
+    }
+];
 
 var calendar = [
     {
@@ -280,6 +291,7 @@ var stadiums = [
 ];
 
 // ***************************************************************
+// ***************************************************************
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); 
@@ -287,6 +299,7 @@ app.get('/', (req, res) => {
     res.status(200).send("Welcome to API REST")
 })
 
+// ***************************************************************
 // ***************************************************************
 
 // Listar todos los partidos
@@ -302,6 +315,15 @@ app.get('/group', (req, res) => {
 // Listar todos los estadios
 app.get('/stadium', (req, res) => {
     res.send(stadiums)
+})
+
+// Validar user and pass 
+app.post('/login', (req, res) => {
+    let data = req.body;
+    // let consecutive = users.length;
+    // let itemUser = {id: consecutive, name: data.Name};
+    users.push(users)
+    res.send("Login user")
 })
 
 /*
@@ -331,6 +353,7 @@ app.delete('/users/:id',(req, res) => {
 })
 */
 
+// ***************************************************************
 // ***************************************************************
  
 http.createServer(app).listen(PORT, () => {
