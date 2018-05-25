@@ -328,11 +328,11 @@ app.post('/login', (req, res) => {
     //     }
     // });
 
-    res.send([{
-        'success': searchUser
-    }])
+    // res.send([{
+    //     'success': searchUser
+    // }])
     // res.send(`{'success': ${searchUser}}`)
-    // res.send(`{'success': ${searchUser}}`)
+    res.send('hola desde nodejs')
 })
 
 // Metodo para crear una cuenta de usuario
