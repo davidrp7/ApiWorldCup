@@ -21,9 +21,9 @@ var calendar = [
     {
         wType: '0',
         day: '',
-        img_local: 'imagen',
+        img_local: 'http://flags.fmcdn.net/data/flags/w1160/ru.png',
         local: 'Rusia',
-        img_visitor: 'imagen',
+        img_visitor: 'http://flags.fmcdn.net/data/flags/w1160/sa.png',
         visitor: 'Arabia',
         hour: '10:00'
     },
@@ -39,29 +39,65 @@ var calendar = [
     {
         wType: '0',
         day: '',
-        img_local: 'imagen',
+        img_local: 'http://flags.fmcdn.net/data/flags/w1160/eg.png',
         local: 'Egipto',
-        img_visitor: 'imagen',
+        img_visitor: 'http://flags.fmcdn.net/data/flags/w1160/uy.png',
         visitor: 'Uruguay',
         hour: '07:00'
     },
     {
         wType: '0',
         day: '',
-        img_local: 'imagen',
+        img_local: 'http://flags.fmcdn.net/data/flags/w1160/ma.png',
         local: 'Marruecos',
-        img_visitor: 'imagen',
+        img_visitor: 'http://flags.fmcdn.net/data/flags/w1160/ir.png',
         visitor: 'RI de Irán',
         hour: '10:00'
     },
     {
         wType: '0',
         day: '',
-        img_local: 'imagen',
+        img_local: 'http://flags.fmcdn.net/data/flags/w1160/pt.png',
         local: 'Portugal',
-        img_visitor: 'imagen',
+        img_visitor: 'http://flags.fmcdn.net/data/flags/w1160/es.png',
         visitor: 'España',
         hour: '13:00'
+    },
+    {
+        wType: '1',
+        day: 'Sábado 16 junio',
+        img_local: '',
+        local: '',
+        img_visitor: '',
+        visitor: '',
+        hour: ''
+    },
+    {
+        wType: '0',
+        day: '',
+        img_local: 'http://flags.fmcdn.net/data/flags/w1160/fr.png',
+        local: 'Francia',
+        img_visitor: 'http://flags.fmcdn.net/data/flags/w1160/au.png',
+        visitor: 'Australia',
+        hour: '05:00'
+    },
+    {
+        wType: '0',
+        day: '',
+        img_local: 'http://flags.fmcdn.net/data/flags/w1160/ar.png',
+        local: 'Argentina',
+        img_visitor: 'http://flags.fmcdn.net/data/flags/w1160/is.png',
+        visitor: 'Islandia',
+        hour: '08:00'
+    },
+    {
+        wType: '0',
+        day: '',
+        img_local: 'http://flags.fmcdn.net/data/flags/w1160/pe.png',
+        local: 'Perú',
+        img_visitor: 'http://flags.fmcdn.net/data/flags/w1160/dk.png',
+        visitor: 'Dinamarca',
+        hour: '08:00'
     }
 ];
 
