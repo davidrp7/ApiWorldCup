@@ -16,7 +16,7 @@ var users = [
         password: '123456',
         name: 'admin',
         email: 'admin@worldcup.com',
-        img_user: 'https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f2e8843e67935b873f32154438cf9664&auto=format&fit=crop&w=1050&q=80'
+        img_user: 'https://www.littlemiracles.com.au/wp-content/uploads/2015/08/kid-on-ipad.png'
     }
 ];
 
