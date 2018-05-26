@@ -320,29 +320,20 @@ app.get('/stadium', (req, res) => {
 // Validar user and pass 
 app.post('/login', (req, res) => {
     let data = req.body;
-    let searchUser = false;
+    let login = [{searchUser: false,id: '0',user: '',password: '',name: '',email: ''}];
 
-    // users.forEach(function(element) {
-    //     if( (element.user == data.user) && (element.password == data.pass) ){
-    //         searchUser = true;
-    //     }
-    // });
-
-    let login = [
-        {
-            searchUser: searchUser,
-            id: '0',
-            user: 'admin',
-            password: '123456',
-            name: 'admin',
-            email: 'admin@worldcup.com'
+    users.forEach(function(element) {
+        if( (element.user == data.user) && (element.password == data.pass) ){
+            login[0]['searchUser'] = true;
+            login[0]['id'] = element.id;
+            login[0]['user'] = element.user;
+            login[0]['password'] = element.password;
+            login[0]['name'] = element.name;
+            login[0]['email'] = element.email;
+            break;
         }
-    ];
-
-    // res.send([{
-    //     'success': searchUser
-    // }])
-    // res.send(`{'success': ${searchUser}}`)
+    });
+    
     res.send(login)
 })
 
@@ -354,33 +345,6 @@ app.post('/signup', (req, res) => {
     users.push(itemUser)
     res.send("usuario creado correctamente")
 })
-
-/*
-// Listar usuarios
-app.get('/users', (req, res) => {
-    res.send(users.reverse())
-})
-// Crear usuarios
-app.post('/users', (req, res) => {
-    let data = req.body;
-    let itemUser = {name: data.Name};
-    users.push(itemUser)
-    res.send("New user add")
-})
-// Actualizar usuarios
-app.patch('/users/:id',(req, res) => {
-    let params = req.params;
-    let data = req.query;
-    users[params.id] = {name: data.user_name};
-    res.send("User update")
-})
-// Eliminar usuarios
-app.delete('/users/:id',(req, res) => {
-    let params = req.params;
-    users.splice(params.id, 1);
-    res.send('User delete')
-})
-*/
 
 // ***************************************************************
 // ***************************************************************
