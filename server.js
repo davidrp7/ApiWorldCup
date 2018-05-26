@@ -334,7 +334,7 @@ app.get('/stadium', (req, res) => {
 // Validar user and pass 
 app.post('/login', (req, res) => {
     let data = req.body;
-    let login = [{searchUser: false,id: '0',user: 'a',password: 'a',name: 'a',email: 'a'}];
+    let login = [{searchUser: false,id: '0',user: '',password: '',name: '',email: ''}];
 
     users.some(function (value, index, _arr) {
         if( (value.user == data.user) && (value.password == data.pass) ){
