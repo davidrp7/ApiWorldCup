@@ -16,6 +16,20 @@ var users = [
         password: '123456',
         name: 'admin',
         email: 'admin@worldcup.com'
+    },
+    {
+        id: '1',
+        user: 'admin2',
+        password: '123456',
+        name: 'admin',
+        email: 'admin@worldcup.com'
+    },
+    {
+        id: '2',
+        user: 'admin3',
+        password: '123456',
+        name: 'admin',
+        email: 'admin@worldcup.com'
     }
 ];
 
@@ -322,15 +336,17 @@ app.post('/login', (req, res) => {
     let data = req.body;
     let login = [{searchUser: false,id: '0',user: 'a',password: 'a',name: 'a',email: 'a'}];
 
-    users.forEach(function(element) {
-        if( (element.user == data.user) && (element.password == data.pass) ){
+    users.some(function (value, index, _arr) {
+        if( (value.user == data.user) && (value.password == data.pass) ){
             login[0]['searchUser'] = true;
-            login[0]['id'] = element.id;
-            login[0]['user'] = element.user;
-            login[0]['password'] = element.password;
-            login[0]['name'] = element.name;
-            login[0]['email'] = element.email;
-            break;
+            login[0]['id'] = value.id;
+            login[0]['user'] = value.user;
+            login[0]['password'] = value.password;
+            login[0]['name'] = value.name;
+            login[0]['email'] = value.email;
+            return true;
+        }else{
+            return false;
         }
     });
 
