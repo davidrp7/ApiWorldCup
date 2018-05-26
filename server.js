@@ -15,7 +15,8 @@ var users = [
         user: 'admin',
         password: '123456',
         name: 'admin',
-        email: 'admin@worldcup.com'
+        email: 'admin@worldcup.com',
+        img_user: 'https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f2e8843e67935b873f32154438cf9664&auto=format&fit=crop&w=1050&q=80'
     }
 ];
 
@@ -320,7 +321,7 @@ app.get('/stadium', (req, res) => {
 // Validar user and pass 
 app.post('/login', (req, res) => {
     let data = req.body;
-    let login = [{searchUser: false,id: '0',user: '',password: '',name: '',email: ''}];
+    let login = [{searchUser: false,id: '0',user: '',password: '',name: '',email: '',img_user:''}];
 
     users.some(function (value, index, _arr) {
         if( (value.user == data.user) && (value.password == data.pass) ){
@@ -330,6 +331,7 @@ app.post('/login', (req, res) => {
             login[0]['password'] = value.password;
             login[0]['name'] = value.name;
             login[0]['email'] = value.email;
+            login[0]['img_user'] = value.img_user;
             return true;
         }else{
             return false;
