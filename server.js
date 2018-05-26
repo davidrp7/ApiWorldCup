@@ -16,20 +16,6 @@ var users = [
         password: '123456',
         name: 'admin',
         email: 'admin@worldcup.com'
-    },
-    {
-        id: '1',
-        user: 'admin2',
-        password: '123456',
-        name: 'admin',
-        email: 'admin@worldcup.com'
-    },
-    {
-        id: '2',
-        user: 'admin3',
-        password: '123456',
-        name: 'admin',
-        email: 'admin@worldcup.com'
     }
 ];
 
