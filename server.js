@@ -320,7 +320,7 @@ app.get('/stadium', (req, res) => {
 // Validar user and pass 
 app.post('/login', (req, res) => {
     let data = req.body;
-    let login = [{searchUser: false,id: '0',user: '',password: '',name: '',email: ''}];
+    let login = [{searchUser: false,id: '0',user: 'a',password: 'a',name: 'a',email: 'a'}];
 
     users.forEach(function(element) {
         if( (element.user == data.user) && (element.password == data.pass) ){
@@ -333,7 +333,7 @@ app.post('/login', (req, res) => {
             break;
         }
     });
-    
+
     res.send(login)
 })
 
