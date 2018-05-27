@@ -306,9 +306,9 @@ var news = [
     },
     {
         id: '3',
-        title: 'Estadio Ekaterimburgo Arena',
-        subtitle: 'xxx',
-        url_news: 'https://img.fifa.com/image/upload/t_l4/qwmfhwry65bhnowuu792.jpg'
+        title: '356.700 entradas asignadas en solo 24 horas',
+        subtitle: 'Dado el gran interés que despierta el torneo, la FIFA recuerda a los aficionados que FIFA.com/tickets es la única página web oficial para la compra de entradas.',
+        url_news: 'https://img.fifa.com/image/upload/t_tc1/vobrzd4d2veojlldjqim.jpg'
     }
 ];
 
