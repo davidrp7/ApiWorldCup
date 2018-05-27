@@ -300,9 +300,9 @@ var news = [
     },
     {
         id: '2',
-        title: 'Estadio Volgogrado Arena',
-        subtitle: 'xxx',
-        url_news: 'https://img.fifa.com/image/upload/t_l4/n0i7ecb1dlfjkcevjn68.jpg'
+        title: 'Live It Up, la canción oficial de Rusia 2018',
+        subtitle: 'Descubre ahora la música que nos acompañará durante la Copa Mundial de la FIFA Rusia 2018. Interpretada por Nicky Jam, con Will Smith y Era Isterefi.',
+        url_news: 'https://img.fifa.com/image/upload/t_tc1/ax7h2zljgevmmv8povax.jpg'
     },
     {
         id: '3',
