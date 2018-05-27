@@ -291,6 +291,27 @@ var stadiums = [
     }
 ];
 
+var news = [
+    {
+        id: '1',
+        title: 'Estadio Kaliningrado',
+        subtitle: 'xxx',
+        url_news: 'https://img.fifa.com/image/upload/t_l4/zd4xfvozxlbz4ogzvl84.jpg'
+    },
+    {
+        id: '2',
+        title: 'Estadio Volgogrado Arena',
+        subtitle: 'xxx',
+        url_news: 'https://img.fifa.com/image/upload/t_l4/n0i7ecb1dlfjkcevjn68.jpg'
+    },
+    {
+        id: '3',
+        title: 'Estadio Ekaterimburgo Arena',
+        subtitle: 'xxx',
+        url_news: 'https://img.fifa.com/image/upload/t_l4/qwmfhwry65bhnowuu792.jpg'
+    }
+];
+
 // ***************************************************************
 // ***************************************************************
 
@@ -311,6 +332,11 @@ app.get('/calendar', (req, res) => {
 // Listar todos los grupos
 app.get('/group', (req, res) => {
     res.send(groups)
+})
+
+// Listar todas las noticias
+app.get('/news', (req, res) => {
+    res.send(news)
 })
 
 // Listar todos los estadios
