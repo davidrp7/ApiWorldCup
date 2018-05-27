@@ -294,9 +294,9 @@ var stadiums = [
 var news = [
     {
         id: '1',
-        title: 'Estadio Kaliningrado',
-        subtitle: 'xxx',
-        url_news: 'https://img.fifa.com/image/upload/t_l4/zd4xfvozxlbz4ogzvl84.jpg'
+        title: 'Rusia da la bienvenida al mundo',
+        subtitle: 'Tras años de duro trabajo, el país anfitrión se prepara para recibir a todos los aficionados que vengan a Rusia y a los combinados en liza.',
+        url_news: 'https://img.fifa.com/image/upload/t_tc1/fncpsqsxjsujcgqryl8p.jpg'
     },
     {
         id: '2',
