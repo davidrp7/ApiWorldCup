@@ -370,17 +370,18 @@ app.post('/login', (req, res) => {
 // Metodo para crear una cuenta de usuario
 app.post('/signup', (req, res) => {
     let data = req.body;
-    // let consecutive = users.length;
-    // let itemUser = {
-    //     id: consecutive,
-    //     user: data.user,
-    //     password: data.pass,
-    //     name: data.name,
-    //     email: data.email,
-    //     img_user: 'https://www.littlemiracles.com.au/wp-content/uploads/2015/08/kid-on-ipad.png'
-    // };
+    let consecutive = users.length;
+    let itemUser = {
+        id: consecutive,
+        user: data.user,
+        password: data.pass,
+        name: data.name,
+        email: data.email,
+        img_user: 'https://www.littlemiracles.com.au/wp-content/uploads/2015/08/kid-on-ipad.png'
+    };
     // users.push(itemUser)
-    res.send("usuario creado correctamente")
+    res.send(itemUser)
+    // res.send("usuario creado correctamente")
 })
 
 // ***************************************************************
