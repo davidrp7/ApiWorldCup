@@ -371,13 +371,19 @@ app.post('/login', (req, res) => {
 app.post('/signup', (req, res) => {
     let data = req.body;
     let consecutive = users.length;
+    // let itemUser = {
+    //     id: consecutive,
+    //     user: data.user,
+    //     password: data.pass,
+    //     name: data.name,
+    //     email: data.email,
+    //     img_user: 'https://www.littlemiracles.com.au/wp-content/uploads/2015/08/kid-on-ipad.png'
+    // };
     let itemUser = {
-        id: consecutive,
         user: data.user,
         password: data.pass,
         name: data.name,
-        email: data.email,
-        img_user: 'https://www.littlemiracles.com.au/wp-content/uploads/2015/08/kid-on-ipad.png'
+        email: data.email
     };
     // users.push(itemUser)
     res.send(itemUser)
