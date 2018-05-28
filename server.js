@@ -383,7 +383,8 @@ app.post('/signup', (req, res) => {
         user: data.user,
         password: data.pass,
         name: data.name,
-        email: data.email
+        email: data.email,
+        repassword: '123'
     };
     // users.push(itemUser)
     res.send(itemUser)
